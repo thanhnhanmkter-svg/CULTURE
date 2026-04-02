@@ -1,0 +1,28 @@
+{
+  "rules": {
+    ".read": true,
+    "currentStep": {
+      ".write": true
+    },
+    "cases": {
+      ".write": true,
+      "$caseId": {
+        ".validate": "newData.hasChildren(['title', 'optionA', 'optionB'])"
+      }
+    },
+    "responses": {
+      "$caseId": {
+        "$userId": {
+          ".write": "!data.exists()",
+          ".validate": "newData.hasChildren(['userId', 'caseId', 'choice', 'timestamp']) && (newData.child('choice').val() === 'A' || newData.child('choice').val() === 'B')"
+        }
+      }
+    },
+    "reactions": {
+      ".write": true,
+      "$reactionId": {
+        ".validate": "newData.hasChildren(['type', 'timestamp'])"
+      }
+    }
+  }
+}
