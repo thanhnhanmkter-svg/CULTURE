@@ -6,8 +6,8 @@ import { motion, AnimatePresence }                    from 'framer-motion'
 import {
   watchCurrentStep, watchCases, watchResponses,
   submitResponse, pushReaction,
-} from '@/lib/firebase'
-import { useUserId } from '@/hooks/useUserId'
+} from '../lib/firebase'
+import { useUserId } from '../hooks/useUserId'
 
 // ─────────────────────────────────────────────────────────────
 //  DNA LOCK VALUES
