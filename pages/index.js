@@ -6,8 +6,8 @@ import { motion, AnimatePresence }                    from 'framer-motion'
 import {
   watchCurrentStep, watchCases, watchResponses,
   submitResponse, pushReaction,
-} from '../lib/firebase'
-import { useUserId } from '../hooks/useUserId'
+} from '../firebase'
+import { db } from '../firebase';
 
 // ─────────────────────────────────────────────────────────────
 //  DNA LOCK VALUES
@@ -27,7 +27,7 @@ const REACTION_ICONS = [
 ]
 
 // ─────────────────────────────────────────────────────────────
-//  SUB-COMPONENTS
+//  SUB-COMPONENTSf
 // ─────────────────────────────────────────────────────────────
 
 function DnaLock({ onUnlock }) {
