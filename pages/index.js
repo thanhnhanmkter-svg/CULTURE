@@ -1,13 +1,14 @@
 'use client'
-// src/app/page.js  — Màn hình Client (nhân viên)
-
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { motion, AnimatePresence }                    from 'framer-motion'
-import {
-  watchCurrentStep, watchCases, watchResponses,
-  submitResponse, pushReaction,
+import { motion, AnimatePresence } from 'framer-motion'
+
+// Sửa lại đoạn gọi Firebase và useUserId cho đúng địa chỉ trên GitHub của bạn
+import { 
+  watchCurrentStep, watchCases, watchResponses, 
+  submitResponse, pushReaction, db 
 } from '../firebase'
-import { db } from '../firebase';
+
+import useUserId from '../useUserId'
 
 // ─────────────────────────────────────────────────────────────
 //  DNA LOCK VALUES
