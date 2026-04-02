@@ -17,7 +17,7 @@ import {
   serverTimestamp,
 } from 'firebase/database'
 
-const firebaseConfig = {
+const firebaseConfig = {https://workshop-culture-default-rtdb.firebaseio.com/}
   apiKey:            'AIzaSyDRoQRCV7fr-1yN071g8Vdi2u1sOvEtHBA',
   authDomain:        'workshop-culture.firebaseapp.com',
   projectId:         'workshop-culture',
