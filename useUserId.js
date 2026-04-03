@@ -10,7 +10,7 @@ function generateId() {
  * Tạo và persist userId trong localStorage.
  * Mỗi thiết bị/browser = 1 userId duy nhất.
  */
-export function useUserId() {
+export default function useUserId() {
   const [userId, setUserId] = useState(null)
 
   useEffect(() => {
