@@ -8,7 +8,7 @@ import {
   submitResponse, pushReaction, db 
 } from '../firebase'
 
-import useUserId from '../useUserId'
+import { useUserId } from '../useUserId';
 
 // ─────────────────────────────────────────────────────────────
 //  DNA LOCK VALUES
