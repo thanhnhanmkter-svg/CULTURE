@@ -1,4 +1,4 @@
-'use client'
+
 // src/app/page.js  — Màn hình Client (nhân viên)
 
 import { useState, useEffect, useRef, useCallback } from 'react'
